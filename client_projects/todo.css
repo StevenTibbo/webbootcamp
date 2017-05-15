@@ -1,0 +1,48 @@
+body{
+	background-color: orange;
+}
+li{
+	border:2px red solid;
+}
+#special{
+	background-color: blue;
+}
+.class1{
+	font-size: 32px;
+	text-decoration: line-through;
+}
+/*star, everything on page*/
+*{
+	border: 1px solid;
+}
+/*desendant selector */
+li a {
+	color: red;
+}
+/*adjecent selector*/
+h4+ul{
+	background-color: green;
+}
+
+/*attribute selector*/
+a[href="http://www.google.com"]
+{
+	background-color: purple;
+}
+
+input[type="checkbox"]
+{
+	background-color: white;
+	font-size: 12px;
+}
+
+/*nth of type*/
+ul:nth-of-type(2){
+	background-color: white;
+	font-size: 12px;
+}
+
+li:nth-of-type(3)
+{
+	background-color: yellow;
+}

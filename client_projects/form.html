@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<h1>Login</h1>
+<!-- action - where the form send data -->
+<!-- method -what HTTP method, get or post -->
+<form action="http://wikipedia.org" method="get">
+	<label>
+		Username: 
+		<input type="txet" name="username" placeholder="username">
+	</label>
+	
+	<label>
+		Password: 
+		<input type="password" name="password" placeholder="password">
+	</label>
+	<label>
+		Email: 
+		<input type="Email" name="email" placeholder="user@email.com">
+	</label>
+
+	<input type="submit">
+</form>
+<!-- second way to conennect label and input, label is meanly for the assistence software for visual impaired -->
+<form action="http://wikipedia.org" method="get">
+	<label for="username">Username: </label>
+	<input id="username" type="txet" name="username" placeholder="username" required="">
+	<label for="password">Password: </label>
+	<input id="password" type="password" name="password" placeholder="password" required="" maxlength="8" minlength="5">
+	<input type="submit">
+</form>
+
+<form>
+	<p>Do you perfer cats or dogs?</p>
+	<label for="dogs">Dogs: </label>
+	<input id="dogs" type="radio" value="DOGS" name="petChoice" checked>
+	<label for="cats">Cats: </label>
+	<input id="cats" type="radio" value="CATS" name="petChoice">
+	<p>whate's your correct color</p>
+	<select name="color">
+		<option value="0">red</option>
+		<option value="1">blue</option>
+		<option value="2">orange</option>
+	</select>
+
+	<p>Text Area</p>
+	<textarea rows="10" cols="10" name="paragraph"></textarea>
+	<br>
+	<button>Go!</button>
+</form>
+
+<body>
+
+</body>
+</html>

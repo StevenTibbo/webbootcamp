@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register form</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form action="ass2.html" method="get">
+		<div>
+			<label for="FirstName">First Name</label>
+			<input type="text" id="FirstName" name="FirstName" placeholder="John" required>
+			<label for="LastName">Last Name</label>
+			<input type="text" id="LastName" name="FirstName" placeholder="Smith" required>
+		</div>
+		<div>
+			<label for="Male">Male</label>
+			<input type="radio" id="Male" name="gender" value="Male" checked>
+			<label for="Female">Female</label>
+			<input type="radio" id="Female" name="gender" value="Female">
+			<label for="Other">Other</label>
+			<input type="radio" id="Other" name="gender" value="Other">	
+		</div>
+		<div>
+			<label for="Email">Email</label>
+			<input type="Email" id="Email" name="Email" placeholder="your email" required>
+			<label for="Password">Password</label>
+<!-- 			<input type="Password" id="Password" name="Password" placeholder="your password" minlength="5" maxlength="8" required>
+ -->
+ 				<input type="password" name="password" pattern=".{5,10}" title="Password must be between 5 and 10" required placeholder="your password">
+		</div>
+		<div>
+			<label for="Birthday">Birthday</label>
+			<select name="birthday_m">
+				<option value="0" selected>Month</option>
+				<option value="1">January</option>
+				<option value="2">Feburay</option>
+			</select>
+			<select name="birthday_d">
+				<option value="0" selected>Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select>
+			<select name="birthday_y">
+				<option value="0" selected>Years</option>
+				<option value="2015">2015</option>
+				<option value="=2016">2016</option>
+			</select>
+		</div>
+		<div>
+			
+		</div>
+			<label for="term">I aggree to the terms and conditions</label>
+			<input type="checkbox" id="term" name="">
+		<div>
+			<input type="Submit" name="">
+		</div>
+	</form>
+</body>
+</html>
