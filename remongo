@@ -1,0 +1,2 @@
+rm /data/db/mongod.lock
+/home/ubuntu/mongod
